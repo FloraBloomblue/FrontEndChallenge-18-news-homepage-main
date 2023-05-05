@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="assets/images/logo.svg" alt="logo"></div>
+    <div class="mobile-menu" onclick="mobileMenuClick()"><img src="assets/images/icon-menu.svg" alt="mobile-menu"></div>
+    <div class="mobileMenuSidebar" id="mySidePanel"> <!-- for desktop view -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="assets/images/icon-menu-close.svg" alt="close"></a>
+      <a href="#"><div>Home</div></a>
+      <a href="#"><div>New</div></a>
+      <a href="#"><div>Popular</div></a>
+      <a href="#"><div>Trending</div></a>
+      <a href="#"><div>Categories</div></a>
+    </div>
+     <div class="desktop-menu "> <!-- for desktop view -->
+      <a href="#"><div>Home</div></a>
+      <a href="#"><div>New</div></a>
+      <a href="#"><div>Popular</div></a>
+      <a href="#"><div>Trending</div></a>
+      <a href="#"><div>Categories</div></a>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <div class="image-section">
+      <div class="image-section-backgroundImage"></div>
+      <div class="image-section-content">
+        <div class="image-section-heading">The Bright Future of Web 3.0?</div>
+        <div class="image-section-readMore">
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+          <button class="read-More-button">Read more</button>
+        </div>
+      </div>
+    </div>
+    <div class="new-section">
+      <h2>New</h2>
+      <div class="new-section-contents">
+        <h3> Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr>
+        <h3> The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        <hr>
+        <h3> Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+      </div>
+      <!-- <div class="articles"> -->
+        <!-- article 1 -->
+        <div class="article-section1">
+          <div class="article1-img"><img src="assets/images/image-retro-pcs.jpg" alt=""></div>
+          <div class="article-info">
+            <h2>01</h2>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <!-- article 2 -->
+        <div class="article-section2">
+          <div class="article2-img"><img src="assets/images/image-top-laptops.jpg" alt=""></div>
+          <div class="article-info">
+            <h2>02</h2>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <!-- article 3 -->
+        <div class="article-section3">
+          <div class="article3-img"><img src="assets/images/image-gaming-growth.jpg" alt=""></div>
+          <div class="article-info">
+            <h2>03</h2>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      <!-- </div> -->
+  </main>
+  <script>
+    /* Set the width of the sidebar to 250px (show it) */
+    function mobileMenuClick(){
+      document.getElementById("mySidePanel").style.width = "300px";
+    }
+     /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav() {
+      document.getElementById("mySidePanel").style.width = "0";
+    }
+  </script>
+</body>
+</html>
